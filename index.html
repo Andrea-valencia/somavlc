@@ -3,252 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOMA | Valencia - Luxury Sensory Experience</title>
+    <title>SOMA | Valencia - Luxury Experience</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    
     <style>
-        :root {
-            --gold: #d4af37;
-            --dark-gold: #996515;
-            --black: #050505;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: var(--black);
-            color: white;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        }
-
-        .status-bar {
-            background: var(--dark-gold);
-            color: black;
-            padding: 10px;
-            text-align: center;
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .hero {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .hero video {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.35);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .logo-text {
-            font-size: 5rem;
-            font-weight: 700;
-            letter-spacing: 15px;
-            background: linear-gradient(to right, #d4af37, #996515);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0;
-            line-height: 1;
-        }
-
-        .hero p {
-            font-size: 0.8rem;
-            letter-spacing: 5px;
-            color: white;
-            margin-top: 15px;
-            opacity: 0.8;
-            text-transform: uppercase;
-        }
-
-        .btn {
-            padding: 18px 45px;
-            background: linear-gradient(45deg, var(--dark-gold), var(--gold));
-            color: black;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 40px;
-            font-weight: bold;
-            font-size: 11px;
-            letter-spacing: 2px;
-            border-radius: 2px;
-            transition: 0.4s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-        }
-
-        .section { padding: 100px 20px; text-align: center; }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 60px auto;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(212, 175, 55, 0.1);
-            padding: 50px 30px;
-            transition: 0.5s;
-        }
-
-        .card:hover {
-            border-color: var(--gold);
-            background: rgba(255, 255, 255, 0.04);
-        }
-
-        .price {
-            font-size: 28px;
-            color: var(--gold);
-            margin: 25px 0;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .protocol-box {
-            max-width: 800px;
-            margin: auto;
-            text-align: left;
-            background: #080808;
-            padding: 40px;
-            border-top: 1px solid #1a1a1a;
-        }
-
-        .protocol-item {
-            display: flex;
-            gap: 25px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #111;
-            padding-bottom: 20px;
-        }
-
-        .protocol-item span { color: var(--gold); font-size: 1.2rem; font-weight: bold; }
-        .protocol-item p { margin: 0; font-size: 0.9rem; color: #999; }
-        .protocol-item strong { color: white; display: block; margin-bottom: 5px; }
-
-        .wa {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            font-size: 30px;
-            z-index: 1000;
-        }
-
-        footer { padding: 60px; text-align: center; font-size: 10px; color: #333; letter-spacing: 2px; text-transform: uppercase; }
-
-        @media (max-width: 768px) {
-            .logo-text { font-size: 3rem; }
-            .grid { grid-template-columns: 1fr; }
-        }
+        :root { --gold: #d4af37; --dark-gold: #996515; --black: #050505; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--black); color: white; line-height: 1.6; text-align: center; }
+        .status-bar { background: var(--dark-gold); color: black; padding: 10px; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+        .hero { position: relative; padding: 60px 20px; overflow: hidden; min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .hero video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.4); }
+        .btn { padding: 18px 45px; background: linear-gradient(45deg, var(--dark-gold), var(--gold)); color: black; text-decoration: none; font-weight: bold; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; display: inline-block; margin-top: 30px; border-radius: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; max-width: 1100px; margin: auto; }
+        .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.1); padding: 40px 20px; transition: 0.5s; }
+        .price { font-size: 26px; color: var(--gold); font-family: 'Playfair Display', serif; margin: 15px 0; }
+        .wa { position: fixed; bottom: 30px; right: 30px; background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; text-decoration: none; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
-
     <div class="status-bar">SOMA VALENCIA • LIMITED AVAILABILITY • RESERVA EXCLUSIVA</div>
-
     <div class="hero">
-        <video autoplay muted loop playsinline>
-            <source src="https://cdn.coverr.co/videos/coverr-burning-candle-1576/1080p.mp4" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <h1 class="logo-text">SOMA</h1>
-            <p>VALENCIA • PRIVACY • DELIGHT</p>
-            <a href="#experiencias" class="btn">EXPERIENCIAS / EXPERIENCES</a>
+        <video autoplay muted loop playsinline><source src="https://cdn.coverr.co/videos/coverr-burning-candle-1576/1080p.mp4" type="video/mp4"></video>
+        <img src="1775671368887.png" alt="SOMA Valencia" style="width: 100%; max-width: 600px; height: auto;">
+        <p style="letter-spacing: 5px; text-transform: uppercase; margin-top: 20px;">Valencia • Privacy • Delight</p>
+        <a href="https://wa.me/34675027022?text=Hola%20SOMA,%20quiero%20información%20sobre%20vuestras%20experiencias." class="btn">DESCUBRIR / DISCOVER</a>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <h3>Masaje en Pareja / Couple's Ritual</h3>
+            <p class="price">550€ · 60min</p>
+            <p>Conexión profunda bajo la luz de las velas.<br><small>Deep connection under candlelight.</small></p>
+        </div>
+        <div class="card">
+            <h3>Cuatro Manos / Four Hands Luxury</h3>
+            <p class="price">450€ · 60min</p>
+            <p>Sincronía total para una relajación absoluta.<br><small>Total synchronicity for absolute relaxation.</small></p>
+        </div>
+        <div class="card">
+            <h3>Viaje Sensorial / Sensory Journey</h3>
+            <p class="price">270€ · 60min</p>
+            <p>Despierta tus sentidos en un entorno privado.<br><small>Awaken your senses in a private setting.</small></p>
         </div>
     </div>
-
-    <div class="section" id="experiencias">
-        <h2 style="color: var(--gold);">Experiencias de Autor <br> <span style="font-size: 0.5em; opacity: 0.7; font-family: 'Inter'; letter-spacing: 2px;">Signature Experiences</span></h2>
-        
-        <div class="grid">
-            <div class="card">
-                <h3>Viaje Interior</h3>
-                <p style="font-size: 0.8rem; color: #666; font-style: italic;">Inner Journey</p>
-                <p class="price">270€ · 60min</p>
-                <p style="font-size: 0.8rem; color: #888;">Desconexión total y despertar sensorial.<br><span style="color: #555;">Total disconnection and sensory awakening.</span></p>
-                <a href="https://wa.me/34675027022?text=Hi%20SOMA%20Valencia,%20I%20want%20to%20book%20the%20Inner%20Journey." class="btn" style="padding: 10px 30px;">RESERVAR / BOOK</a>
-            </div>
-            
-            <div class="card" style="border-color: var(--gold);">
-                <div style="font-size: 10px; color: var(--gold); margin-bottom: 10px; letter-spacing: 2px;">MOST REQUESTED</div>
-                <h3>Cuatro Manos</h3>
-                <p style="font-size: 0.8rem; color: #666; font-style: italic;">Four Hands</p>
-                <p class="price">450€ · 60min</p>
-                <p style="font-size: 0.8rem; color: #888;">Dos terapeutas en perfecta sincronía.<br><span style="color: #555;">Two therapists in absolute synchronicity.</span></p>
-                <a href="https://wa.me/34675027022?text=Hi%20SOMA%20Valencia,%20I%20want%20to%20book%20the%20Four%20Hands%20experience." class="btn" style="padding: 10px 30px;">RESERVAR / BOOK</a>
-            </div>
-
-            <div class="card">
-                <h3>Expansión Energética</h3>
-                <p style="font-size: 0.8rem; color: #666; font-style: italic;">Energy Expansion</p>
-                <p class="price">200€ · 60min</p>
-                <p style="font-size: 0.8rem; color: #888;">Equilibrio vital y renovación corporal.<br><span style="color: #555;">Vital balance and body renewal.</span></p>
-                <a href="https://wa.me/34675027022?text=Hi%20SOMA%20Valencia,%20I%20want%20to%20book%20the%20Energy%20Expansion." class="btn" style="padding: 10px 30px;">RESERVAR / BOOK</a>
-            </div>
-        </div>
-        <p style="margin-top:20px; color: #555; font-size: 0.9rem;">+50€ Suplemento Hotel / <span style="font-style: italic;">Hotel Supplement</span></p>
-    </div>
-
-    <div class="section" id="protocolo" style="background: #030303;">
-        <h2>Protocolo / <span style="opacity: 0.6;">Protocol</span></h2>
-        <div class="protocol-box">
-            <div class="protocol-item">
-                <span>01</span>
-                <p><strong>RESERVA / BOOKING</strong><br>Depósito previo obligatorio para confirmar cita. No se atienden domicilios particulares.<br><span style="color: #555;">Advance deposit required to formalize your appointment. Private homes are not attended.</span></p>
-            </div>
-            <div class="protocol-item">
-                <span>02</span>
-                <p><strong>UBICACIÓN / LOCATION</strong><br>Atención exclusiva en estudio privado o Suite de Hotel.<br><span style="color: #555;">Exclusive service in private studio or Hotel Suite only.</span></p>
-            </div>
-            <div class="protocol-item">
-                <span>03</span>
-                <p><strong>ETIQUETA / ETIQUETTE</strong><br>Máxima puntualidad y respeto mutuo absoluto.<br><span style="color: #555;">Maximum punctuality and absolute mutual respect.</span></p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        SOMA VALENCIA • 2026 • LUXURY WELLNESS SERVICES <br>
-        DISCRECIÓN Y SEGURIDAD / DISCRETION & SAFETY
-    </footer>
-
-    <a class="wa" href="https://wa.me/34675027022?text=Hola%20SOMA%20Valencia,%20quiero%20consultar%20disponibilidad." target="_blank">💬</a>
-
+    <footer style="padding: 40px; font-size: 10px; color: #444; letter-spacing: 2px;">SOMA VALENCIA • 2026 • DISCRECIÓN ABSOLUTA</footer>
+    <a href="https://wa.me/34675027022" class="wa">💬</a>
 </body>
-</html> 
+</html>
