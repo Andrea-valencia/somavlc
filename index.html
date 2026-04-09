@@ -3,39 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOMA | Valencia - Luxury Experience</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>SOMA VALENCIA | Luxury Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #d4af37; --dark-gold: #996515; --black: #050505; }
-        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--black); color: white; line-height: 1.6; text-align: center; }
-        .status-bar { background: var(--dark-gold); color: black; padding: 10px; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
-        .hero { position: relative; padding: 60px 20px; min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #000; }
-        .btn { padding: 18px 45px; background: linear-gradient(45deg, var(--dark-gold), var(--gold)); color: black; text-decoration: none; font-weight: bold; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; display: inline-block; margin-top: 30px; border-radius: 2px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; max-width: 1100px; margin: auto; }
-        .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.1); padding: 40px 20px; }
-        .price { font-size: 26px; color: var(--gold); font-family: 'Playfair Display', serif; margin: 15px 0; }
-        .wa { position: fixed; bottom: 30px; right: 30px; background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; text-decoration: none; z-index: 1000; }
+        :root { --gold: #c5a059; --dark: #050505; --grey: #888; }
+        body { margin: 0; background-color: var(--dark); color: #eee; font-family: 'Playfair Display', serif; text-align: center; }
+        .header { padding: 60px 20px 20px; }
+        .logo-img { width: 100%; max-width: 280px; height: auto; }
+        .container { max-width: 1100px; margin: auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .card { background: #0a0a0a; border: 1px solid #1a1a1a; overflow: hidden; }
+        .card img { width: 100%; height: 280px; object-fit: cover; opacity: 0.7; }
+        .card-info { padding: 25px; }
+        .price { color: var(--gold); font-size: 28px; margin: 15px 0; font-weight: 700; }
+        .desc { color: var(--grey); font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 20px; height: 60px; }
+        .btn { background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 15px 30px; text-decoration: none; font-size: 12px; font-weight: bold; display: inline-block; text-transform: uppercase; letter-spacing: 2px; width: 80%; }
+        .protocol { border-top: 1px solid #1a1a1a; margin-top: 60px; padding: 60px 20px; background: #000; }
+        .protocol h3 { color: var(--gold); letter-spacing: 4px; text-transform: uppercase; }
+        .protocol-box { max-width: 600px; margin: auto; text-align: left; color: var(--grey); font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="status-bar">SOMA VALENCIA • RESERVA EXCLUSIVA</div>
-    <div class="hero">
-        <img src="1775671368887.png" alt="SOMA Valencia" style="width: 100%; max-width: 600px; height: auto;">
-        <p style="letter-spacing: 5px; text-transform: uppercase; margin-top: 20px;">Privacy • Luxury • Delight</p>
-        <a href="https://wa.me/34675027022" class="btn">RESERVAR / BOOK</a>
+
+    <div class="header">
+        <img src="145095.png" alt="SOMA Logo" class="logo-img">
+        <p style="letter-spacing: 5px; color: var(--grey); font-size: 10px; margin-top: 10px;">VALENCIA • PRIVACY • DELIGHT</p>
     </div>
-    <div class="grid">
+
+    <div class="container">
         <div class="card">
-            <h3>Masaje en Pareja / Couple's Ritual</h3>
-            <p class="price">550€ · 60min</p>
-            <p>Conexión profunda bajo la luz de las velas.<br><small>Deep connection under candlelight.</small></p>
+            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800" alt="Ritual Pareja">
+            <div class="card-info">
+                <h3>RITUAL EN PAREJA</h3>
+                <p class="desc">Conexión y bienestar compartido en un ambiente de absoluta privacidad.</p>
+                <p class="price">550€</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Pareja" class="btn">RESERVAR / BOOK</a>
+            </div>
         </div>
+
         <div class="card">
-            <h3>Cuatro Manos / Four Hands Luxury</h3>
-            <p class="price">450€ · 60min</p>
-            <p>Sincronía total para una relajación absoluta.<br><small>Total synchronicity for absolute relaxation.</small></p>
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" alt="4 Manos">
+            <div class="card-info">
+                <h3>CUATRO MANOS LUXURY</h3>
+                <p class="desc">Sincronía perfecta diseñada para una desconexión mental total.</p>
+                <p class="price">450€</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%204Manos" class="btn">RESERVAR / BOOK</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=800" alt="Ventosas">
+            <div class="card-info">
+                <h3>TERAPIA VENTOSAS</h3>
+                <p class="desc">Alivio muscular profundo y liberación de tensión acumulada.</p>
+                <p class="price">240€</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Ventosas" class="btn">RESERVAR / BOOK</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" alt="Sensorial">
+            <div class="card-info">
+                <h3>VIAJE SENSORIAL</h3>
+                <p class="price">270€</p>
+                <p class="desc">Atención impecable dedicada exclusivamente a su bienestar sensorial.</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Sensorial" class="btn">RESERVAR / BOOK</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=800" alt="Deep Tissue">
+            <div class="card-info">
+                <h3>TEJIDO PROFUNDO</h3>
+                <p class="price">220€</p>
+                <p class="desc">Masaje intenso para descargar tensiones y recuperar el tono muscular.</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20DeepTissue" class="btn">RESERVAR / BOOK</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519824141121-b976743f14bc?q=80&w=800" alt="Relax">
+            <div class="card-info">
+                <h3>RELAJANTE SOMA</h3>
+                <p class="price">190€</p>
+                <p class="desc">Masaje rítmico con aceites calientes para una calma absoluta.</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Relax" class="btn">RESERVAR / BOOK</a>
+            </div>
         </div>
     </div>
-    <a href="https://wa.me/34675027022" class="wa">💬</a>
+
+    <div class="protocol">
+        <h3>Protocolo de Reserva</h3>
+        <div class="protocol-box">
+            <p><strong>Confirmación:</strong> Depósito de 50€ para asegurar disponibilidad.</p>
+            <p><strong>Ubicación:</strong> Solo en Suite de Hotel o Estudio Privado.</p>
+            <p><strong>Privacidad:</strong> El resto se abona al inicio del servicio en efectivo.</p>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 SOMA VALENCIA | ADULTS ONLY</footer>
 </body>
 </html>
