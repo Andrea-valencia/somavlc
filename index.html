@@ -3,59 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOMA VALENCIA | Luxury Experience</title>
+    <title>SOMA VALENCIA | Luxury Sensory Experience</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root { --gold: #c5a059; --dark: #050505; --grey: #888; }
         body { margin: 0; background-color: var(--dark); color: #eee; font-family: 'Playfair Display', serif; text-align: center; }
-        .header { padding: 60px 20px 20px; }
-        .logo-img { width: 100%; max-width: 280px; height: auto; }
-        .container { max-width: 1100px; margin: auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .card { background: #0a0a0a; border: 1px solid #1a1a1a; overflow: hidden; }
-        .card img { width: 100%; height: 280px; object-fit: cover; opacity: 0.7; }
-        .card-info { padding: 25px; }
+        
+        .header { padding: 60px 20px 30px; }
+        .logo-box { font-size: 3.5rem; letter-spacing: 12px; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+        .logo-img { max-width: 280px; height: auto; display: block; margin: 0 auto; }
+        
+        .tagline { font-size: 11px; color: var(--grey); text-transform: uppercase; letter-spacing: 5px; margin-top: 10px; }
+        .container { max-width: 1100px; margin: auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        
+        .card { background: #0a0a0a; border: 1px solid #1a1a1a; overflow: hidden; transition: 0.4s; }
+        .card:hover { border-color: var(--gold); }
+        .card img { width: 100%; height: 300px; object-fit: cover; opacity: 0.6; filter: grayscale(20%); }
+        .card-info { padding: 30px; }
+        
+        h3 { font-size: 20px; letter-spacing: 2px; margin: 0; color: #fff; text-transform: uppercase; }
         .price { color: var(--gold); font-size: 28px; margin: 15px 0; font-weight: 700; }
-        .desc { color: var(--grey); font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 20px; height: 60px; }
-        .btn { background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 15px 30px; text-decoration: none; font-size: 12px; font-weight: bold; display: inline-block; text-transform: uppercase; letter-spacing: 2px; width: 80%; }
+        .desc { color: var(--grey); font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 25px; text-align: justify; }
+        
+        .btn { background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 15px 30px; text-decoration: none; font-size: 12px; font-weight: bold; display: inline-block; text-transform: uppercase; letter-spacing: 2px; width: 85%; transition: 0.3s; }
+        .btn:hover { background: var(--gold); color: black; }
+
         .protocol { border-top: 1px solid #1a1a1a; margin-top: 60px; padding: 60px 20px; background: #000; }
-        .protocol h3 { color: var(--gold); letter-spacing: 4px; text-transform: uppercase; }
-        .protocol-box { max-width: 600px; margin: auto; text-align: left; color: var(--grey); font-size: 14px; }
+        .protocol h4 { color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 30px; }
+        .protocol-box { max-width: 650px; margin: auto; text-align: left; color: var(--grey); font-size: 14px; line-height: 1.8; }
+
+        .legal-section { border-top: 1px solid #111; padding: 60px 20px; background: #050505; text-align: left; max-width: 800px; margin: auto; }
+        .legal-section h5 { color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; font-size: 14px; }
+        .legal-text { color: #555; font-size: 12px; margin-bottom: 30px; line-height: 1.5; }
+
+        footer { padding: 40px; font-size: 10px; color: #333; letter-spacing: 2px; border-top: 1px solid #111; }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="145095.png" alt="SOMA Logo" class="logo-img">
-        <p style="letter-spacing: 5px; color: var(--grey); font-size: 10px; margin-top: 10px;">VALENCIA • PRIVACY • DELIGHT</p>
+        <div class="logo-box">
+            <img src="145095.png" alt="SOMA" class="logo-img" onerror="this.style.display='none'">
+            <span>SOMA</span>
+        </div>
+        <p class="tagline">VALENCIA • PRIVACY • DELIGHT</p>
     </div>
 
     <div class="container">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800" alt="Ritual Pareja">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" alt="Ritual Pareja">
             <div class="card-info">
-                <h3>RITUAL EN PAREJA</h3>
-                <p class="desc">Conexión y bienestar compartido en un ambiente de absoluta privacidad.</p>
-                <p class="price">550€</p>
-                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Pareja" class="btn">RESERVAR / BOOK</a>
+                <h3>RITUAL PAREJA / COUPLE'S RITUAL</h3>
+                <p class="desc">Un oasis de calma para dos. Disfruten de la calidez de los aceites esenciales templados en un entorno de absoluta privacidad y exclusividad.<br><i>A shared oasis of calm. Enjoy the warmth of tempered essential oils in an environment of absolute privacy and exclusivity.</i></p>
+                <p class="price">550€ (90 min)</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Ritual%20Pareja" class="btn">RESERVAR / BOOK</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" alt="4 Manos">
+            <img src="https://images.unsplash.com/photo-1611077544190-672530cc13ce?q=80&w=800" alt="4 Manos">
             <div class="card-info">
-                <h3>CUATRO MANOS LUXURY</h3>
-                <p class="desc">Sincronía perfecta diseñada para una desconexión mental total.</p>
-                <p class="price">450€</p>
-                <a href="https://wa.me/34675027022?text=Deseo%20reservar%204Manos" class="btn">RESERVAR / BOOK</a>
+                <h3>CUATRO MANOS / FOUR HANDS LUXURY</h3>
+                <p class="desc">Sincronía perfecta. Una danza coordinada de movimientos fluidos diseñada para anular el estrés y renovar su energía vital por completo.<br><i>Perfect synchronicity. A coordinated dance of fluid movements designed to cancel stress and completely renew your vital energy.</i></p>
+                <p class="price">450€ (60 min)</p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Cuatro%20Manos" class="btn">RESERVAR / BOOK</a>
             </div>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=800" alt="Ventosas">
             <div class="card-info">
-                <h3>TERAPIA VENTOSAS</h3>
-                <p class="desc">Alivio muscular profundo y liberación de tensión acumulada.</p>
-                <p class="price">240€</p>
+                <h3>TERAPIA VENTOSAS / CUPPING RITUAL</h3>
+                <p class="desc">Técnica milenaria de revitalización. Succión sutil que libera la fascia, mejora la circulación y aporta una ligereza corporal inmediata.<br><i>Ancient revitalization technique. Subtle suction that releases the fascia, improves circulation, and provides immediate body lightness.</i></p>
+                <p class="price">240€ (60 min)</p>
                 <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Ventosas" class="btn">RESERVAR / BOOK</a>
             </div>
         </div>
@@ -63,43 +83,55 @@
         <div class="card">
             <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" alt="Sensorial">
             <div class="card-info">
-                <h3>VIAJE SENSORIAL</h3>
-                <p class="price">270€</p>
-                <p class="desc">Atención impecable dedicada exclusivamente a su bienestar sensorial.</p>
-                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Sensorial" class="btn">RESERVAR / BOOK</a>
+                <h3>VIAJE SENSORIAL / SENSORY JOURNEY</h3>
+                <p class="price">270€ (60 min)</p>
+                <p class="desc">Experiencia de autor personalizada. Aceites exclusivos y una atención impecable dedicada exclusivamente a despertar sus sentidos.<br><i>Signature personalized experience. Exclusive oils and impeccable attention dedicated exclusively to awakening your senses.</i></p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Viaje%20Sensorial" class="btn">RESERVAR / BOOK</a>
             </div>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=800" alt="Deep Tissue">
             <div class="card-info">
-                <h3>TEJIDO PROFUNDO</h3>
-                <p class="price">220€</p>
-                <p class="desc">Masaje intenso para descargar tensiones y recuperar el tono muscular.</p>
-                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20DeepTissue" class="btn">RESERVAR / BOOK</a>
+                <h3>TEJIDO PROFUNDO / DEEP TISSUE</h3>
+                <p class="price">220€ (60 min)</p>
+                <p class="desc">Masaje intenso que trabaja las capas musculares más profundas. Ideal para aliviar nudos y tensiones crónicas de la rutina diaria.<br><i>Intense massage working the deepest muscle layers. Ideal for relieving knots and chronic tensions from daily routine.</i></p>
+                <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Tejido%20Profundo" class="btn">RESERVAR / BOOK</a>
             </div>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1519824141121-b976743f14bc?q=80&w=800" alt="Relax">
             <div class="card-info">
-                <h3>RELAJANTE SOMA</h3>
-                <p class="price">190€</p>
-                <p class="desc">Masaje rítmico con aceites calientes para una calma absoluta.</p>
+                <h3>RELAJANTE SOMA / SOMA RELAXING</h3>
+                <p class="price">190€ (60 min)</p>
+                <p class="desc">Masaje rítmico con aceites templados que calman el sistema nervioso y proporcionan una paz absoluta y bienestar inmediato.<br><i>Rhythmic massage with warm oils that calm the nervous system and provide absolute peace and immediate well-being.</i></p>
                 <a href="https://wa.me/34675027022?text=Deseo%20reservar%20Relax" class="btn">RESERVAR / BOOK</a>
             </div>
         </div>
     </div>
 
     <div class="protocol">
-        <h3>Protocolo de Reserva</h3>
+        <h4>Protocolo de Reserva / Booking Protocol</h4>
         <div class="protocol-box">
-            <p><strong>Confirmación:</strong> Depósito de 50€ para asegurar disponibilidad.</p>
-            <p><strong>Ubicación:</strong> Solo en Suite de Hotel o Estudio Privado.</p>
-            <p><strong>Privacidad:</strong> El resto se abona al inicio del servicio en efectivo.</p>
+            <p>• <strong>Confirmación:</strong> Depósito de 50€ para asegurar disponibilidad exclusiva / <i>50€ deposit required to ensure exclusive availability.</i></p>
+            <p>• <strong>Cancelación:</strong> El depósito <strong>no es reembolsable</strong> en caso de no presentarse a la cita / <i>The deposit is <strong>non-refundable</strong> in case of a no-show.</i></p>
+            <p>• <strong>Ubicación:</strong> Servicio únicamente en Suite de Hotel o Estudio Privado / <i>Hotel Suite or Private Studio only.</i></p>
+            <p>• <strong>Privacidad:</strong> El resto del importe se abona al inicio del servicio en efectivo / <i>Balance paid in cash at the start of the service.</i></p>
         </div>
     </div>
 
-    <footer>&copy; 2026 SOMA VALENCIA | ADULTS ONLY</footer>
+    <div class="legal-section">
+        <h5>Aviso Legal y Términos</h5>
+        <p class="legal-text">SOMA VALENCIA ofrece servicios de bienestar y masajes profesionales. Queda prohibida la reproducción total o parcial de los contenidos de esta web sin autorización.</p>
+        
+        <h5>Política de Privacidad</h5>
+        <p class="legal-text">En cumplimiento con el RGPD, le informamos que sus datos de contacto (WhatsApp) se utilizan exclusivamente para la gestión de su reserva. No almacenamos datos en bases de datos automatizadas ni los cedemos a terceros.</p>
+        
+        <h5>Política de Cookies</h5>
+        <p class="legal-text">Esta web es informativa y no utiliza cookies de seguimiento ni publicitarias para recopilar información personal del usuario.</p>
+    </div>
+
+    <footer>&copy; 2026 SOMA VALENCIA | ADULTS ONLY | DISCRECIÓN ABSOLUTA</footer>
 </body>
 </html>
